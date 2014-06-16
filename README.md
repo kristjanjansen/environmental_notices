@@ -1,3 +1,7 @@
+### About
+
+http://keskkonnateated.ee source code
+
 ### Todo
 
 - Custom marker as in http://leafletjs.com/examples/geojson.html:
@@ -16,3 +20,4 @@
 
 - formattedDate
 - urlSource vs url
+- link urls in descriptions (before the other link processing)
