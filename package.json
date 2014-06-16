@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "leaflet": "~0.7.3",
+    "routie": "git://github.com/jgallen23/routie",
+    "async": "~0.9.0",
+    "mustache": "~0.8.2",
+    "moment": "~2.7.0",
+    "JSONStream": "~0.8.3",
+    "proj4": "~2.1.2",
+    "proj4js-defs": "0.0.1",
+    "request": "~2.36.0",
+    "cheerio": "~0.17.0",
+    "nodemailer": "~0.6.5"
+  }
+}

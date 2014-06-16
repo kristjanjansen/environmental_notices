@@ -1,0 +1,10 @@
+{ 
+    "scrapeCron": "35 * * * *",
+    "mailCron": "00 08 * * 1",
+    "mailUsername": "keskkonnateated@gmail.com",
+    "mailPassword": "teatedkeskkonna",
+    "mailFrom": "Keskkonnateated <keskkonnateated@gmail.com>",
+    "mailTo": [
+        "Kristjan Jansen <kristjan.jansen@gmail.com>"
+    ]
+}
