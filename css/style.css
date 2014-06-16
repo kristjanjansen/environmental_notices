@@ -30,7 +30,8 @@ a, a:link {
 }
 #intro article {
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 440px;
+  padding: 0 20px;
 }
 #map {
   height: 100%;
