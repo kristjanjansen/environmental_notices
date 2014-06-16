@@ -16,6 +16,6 @@
     "napa": "~0.4.1"
   },
   "scripts": {
-    "install": "napa flesler/jquery.scrollTo:scrollto shramov/leaflet-plugins Leaflet/Leaflet#stable:leaflet"
+    "install": "napa shramov/leaflet-plugins"
   }
 }
