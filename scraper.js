@@ -14,6 +14,8 @@ for (var i = start; i < stop; i = i + 10) {
   urls.push(site + '/' + 'index.php?act=1&salguskpvavald=' + moment().subtract('M', 1).format('DD.MM.YYYY') + '&sloppkpvavald=' + moment().format('DD.MM.YYYY') + '&steateliigid=' + types.ids() + '&srange=' + i + '-' + (i + 9));
 }
 
+var splitCadaster = false
+
 async.eachLimit(urls, 1, 
     function(url, cb) {
         var i = 0        
@@ -37,7 +39,7 @@ async.eachLimit(urls, 1,
                             })[0].priority
                             var pattern = /\b[1-2]?[0-9]\.\s(.+)\n/gi
                             var matches = msg.description.match(pattern)
-                            if (matches && msg.type == 'Maa riigi omandisse jätmise teated') {
+                            if (matches && msg.type == 'Maa riigi omandisse jätmise teated' && splitCadaster) {
                               
                                 matches.forEach(function(match, idx) {
                                     msg.id = msg.id.substr(0, msg.id.length - 1) + (idx + 1) // @todo fix it
