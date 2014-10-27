@@ -4,7 +4,7 @@
 npm install
 ```
 
-Then create a config/config.json file:
+Then create a ```config/config.json``` file:
 
 ```
 {
