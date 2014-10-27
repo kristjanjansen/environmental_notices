@@ -18,3 +18,17 @@ Then create a ```config/config.json``` file:
   "mailPassword": "gmail_account_password"
 }
 ```
+
+### Running
+
+To invoke data scraping:
+
+```
+node scraper.js
+```
+
+To invoke mailer:
+
+```
+node mailer.js
+```
