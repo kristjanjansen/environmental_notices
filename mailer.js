@@ -20,6 +20,7 @@ var rows = []
 parser.on('data', function (msg) {
       var row = {}
       row.id = msg.properties.id
+      row.at_url = msg.properties.url
       row.url = msg.properties.url
       row.type = msg.properties.type
       row.description = msg.properties.description
@@ -39,7 +40,11 @@ stream.on('end',function () {
             from: config.mailFrom,
             to: config.mailTo, 
             subject: 'Keskkonnateated ' + m.startOf('week').format(format) + ' - ' + m.endOf('week').format(format),
-            html: mustache.render(template, {rows: rows})
+            html: mustache.render(template, {
+              rows: rows,
+              base_url: config.baseUrl,
+              email: config.mailFrom
+            })
           }
           
           //console.log(mailOptions.html)
