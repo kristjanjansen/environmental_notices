@@ -10,7 +10,8 @@
     "proj4js-defs": "0.0.1",
     "request": "~2.36.0",
     "cheerio": "~0.17.0",
-    "nodemailer": "~0.6.5"
+    "nodemailer": "~0.6.5",
+    "leaflet": "~0.7.3"
   },
   "devDependencies": {
     "napa": "~0.4.1"
