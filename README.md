@@ -1,23 +1,20 @@
-### About
+### Installation
 
-http://keskkonnateated.ee source code
+```
+npm install
+```
 
-### Todo
+Then create a config/config.json file:
 
-- Custom marker as in http://leafletjs.com/examples/geojson.html:
-
-  ```
-  var item = L.geoJson(null, {
-      pointToLayer: function (feature, latlng) {
-          return L.marker(latlng, {icon: L.icon({
-              iconUrl: 'images/marker-icon.png',
-              iconRetinaUrl: 'images/marker-icon-2x.png',
-            })
-        });
-      }
-  }).addTo(map)
-  ```
-
-- formattedDate
-- urlSource vs url
-- link urls in descriptions (before the other link processing)
+```
+{
+  "baseUrl": "site_base_url",
+  "mailFrom": "mail_to_send_from",
+  "mailTo": [
+    "mail_to_send_to_1",
+    "mail_to_send_to_2"
+  ],
+  "mailUsername": "gmail_account_to_sent_from",
+  "mailPassword": "gmail_account_password"
+}
+```
