@@ -1,6 +1,10 @@
+## environmental_notices
+
 Open data application for Estonian Fund for Nature https://elfond.ee/.
 
 Scrapes official notifications from Estonian government site, parses and filters the results sends them regularily to the mailing list and provides geodata preview.
+
+Implemented in NodeJS.
 
 ### Installation
 
